@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffe082;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-app-container {
+    background: #fff;
+    margin: 40px auto;
+    padding: 20px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ffb30044;
+    width: 100%;
+    max-width: 350px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff7043;
+    margin-bottom: 18px;
+}
+
+.input-section {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ffd54f;
+    border-radius: 4px;
+    font-size: 15px;
+    background: #fffde7;
+}
+
+#add-task-btn {
+    padding: 8px 14px;
+    background: #ff7043;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#add-task-btn:hover {
+    background: #ffa726;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffe082;
+}
+.task-item:last-child {
+    border-bottom: none;
+}
+.task-item span {
+    flex: 1;
+    font-size: 15px;
+    color: #333;
+}
+
+.edit-btn, .delete-btn, .save-btn, .cancel-btn, .done-btn {
+    margin-left: 6px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.edit-btn { background: #ffd54f; color: #333; }
+.edit-btn:hover { background: #fff176; }
+.delete-btn { background: #ff7043; color: #fff; }
+.delete-btn:hover { background: #d84315; }
+.save-btn { background: #66bb6a; color: #fff; }
+.save-btn:hover { background: #388e3c; }
+.cancel-btn { background: #bdbdbd; color: #fff; }
+.cancel-btn:hover { background: #757575; }
+.done-btn { background: #29b6f6; color: #fff; }
+.done-btn:hover { background: #0288d1; }
+
+.edit-input {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #ffd54f;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-right: 6px;
+    background: #fffde7;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa !important;
+    font-style: italic;
+}
+
+.emoji-bounce {
+    font-size: 18px;
+    margin-right: 4px;
+}
